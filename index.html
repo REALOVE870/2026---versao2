@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cassino Real 🎰</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
@@ -19,11 +19,11 @@
 <div class="container hidden" id="principal">
   <h2>🎰 Cassino Real 🎰</h2>
   <p id="dadosUsuario"></p>
-  <p id="saldoFree">Saldo Free: R$35.00</p>
+  <p id="saldoFree">Saldo Free: R$35,00</p>
 
   <div class="balance-box">
     <strong>Saldo VIP:</strong><br/>
-    <button class="vip-button" onclick="pedirRecarga()">R$1300.00 (bloqueado)</button>
+    <button class="vip-button" onclick="pedirRecarga()">R$1300,00 (bloqueado)</button>
   </div>
 
   <div>
@@ -38,10 +38,9 @@
     <input type="text" placeholder="Chave Pix" /><br/>
     <p>Faça uma recarga de R$5 ou R$10. Caso não tenha, digite o código de quem lhe indicou para liberar o saque:</p>
     <input type="text" placeholder="Digite o código de indicação aqui" /><br/>
-    
-    <p>Ou digite o código de saque:</p>
-    <input type="text" id="codigoSaque" placeholder="Ex: 1243" /><br/>
 
+    <p>Ou digite o código de saque:</p>
+    <input type="text" id="codigoSaque" placeholder="Exemplo: 1243" /><br/>
     <button class="button" onclick="validarCodigo()">Confirmar</button>
   </div>
 
@@ -59,7 +58,7 @@
     const codigo = document.getElementById('codigoSaque').value;
     if (codigo === '1243') {
       alert('✅ Código de saque válido! Liberando...');
-      enviarSaque(); // Chama a função que você já tem no seu JS
+      enviarSaque(); // Chama a função que já existe no seu scripts.js
     } else {
       alert('❌ Código inválido. Verifique e tente novamente.');
     }
